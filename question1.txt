@@ -23,11 +23,6 @@ function creatURL(sting) {
 // "Jake%20C%20Haley"
 // "I'm%20going%20to%20the%20store"
 
-
-
-
-
-
 THIS SOLUTION USES REGEX WHOOPS
 
 //ReplaceAll will look at the string
