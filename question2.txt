@@ -21,4 +21,18 @@ function dedupe(array) {
   return [...new Set(array)];
 }
 
+
 Both solutions return the example array withoutout duplicates. 
+
+// WITH FILTER METHOD
+
+function dedupe(array) {
+  let newArray = array.filter((item, index) => array.indexOf(item) === index);
+  return newArray
+}
+
+//REFACTORED WITH FILTER METHOD
+
+function dedupe(array) {
+    return array.filter((item, index) => array.indexOf(item) === index);
+}
