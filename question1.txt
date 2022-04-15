@@ -9,6 +9,27 @@ Input: "Jasmine Ann Jones"
 
 Output: "Jasmine%20Ann%20Jones"
 
+SOLUTION NOT USING REGEX:
+
+//use split method to split string on spaces. 
+//use join method to create new string with %20 in place of spaces
+
+function creatURL(sting) {
+  return string.split(" ").join("%20")
+}
+
+//the above function returns:
+// "Jasmine%20Ann%20Jones"
+// "Jake%20C%20Haley"
+// "I'm%20going%20to%20the%20store"
+
+
+
+
+
+
+THIS SOLUTION USES REGEX WHOOPS
+
 //ReplaceAll will look at the string
 //replaces every space with %20
 
@@ -19,3 +40,4 @@ function createURL(sting) {
 }
 
 function above works
+
