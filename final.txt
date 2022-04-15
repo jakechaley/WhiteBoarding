@@ -1,0 +1,29 @@
+Array Deduping
+
+Write an algorithm that removes duplicates from an array. Do not use a function like filter() to solve this. Once you have solved the problem, demonstrate how it can be solved with filter(). Solve the problem with and without recursion.
+
+Input: [7, 42, "whats up", "whats up", 7, 67]
+
+Output: [7, 42, "whats up", 67]
+
+// use set to obtain all the unique elements. 
+// use the spead syntax to get array 
+
+function dedupe (array) { [7, 42, "whats up", "whats up", 7, 67]
+  const removeDupe = [...new Set(array)];
+  return removeDupe; 
+}
+
+//REFACTORED 
+function dedupe (array) {
+  return [...new Set(array)];
+}
+
+function dedupe (array) { 
+  const newArray = array.filter((item, index) => array.indexOf(item) === index);
+  return newArray;
+}
+
+function dedupe (array) {
+  return array.filter((item, index) => array.indexOf(item) === index);
+}
