@@ -16,7 +16,22 @@ Input: [9, 2, 7, 12]
 Output: [2, 7, 9, 12]
 
 
-//loop over array 
-//declare variable for index of smallest element (minIndex)
+INSERTION SORT SOLUTION
+//loop through array (for)
+//set index-1 to variable (indexOfSortedSection)
+//set array[index] to variable (valueToInsert)
+// run While loop 
 
-
+function insertionSort(array) {
+  for (let index = 1; index < array.length; index++) {
+    let indexOfSortedSection = index - 1;
+    let valueToInsert = array[index];
+    while ((array[indexOfSortedSection] > valueToInsert)) {
+      let newValue = array[indexOfSortedSection];
+      array[indexOfSortedSection + 1 ] = newValue;
+      indexOfSortedSection--
+    }
+    array[indexOfSortedSection + 1] = valueToInsert;
+  }
+  return array;
+}
