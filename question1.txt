@@ -8,3 +8,14 @@ Example
 Input: "Jasmine Ann Jones"
 
 Output: "Jasmine%20Ann%20Jones"
+
+//ReplaceAll will look at the string
+//replaces every space with %20
+
+let string = "Jasmine Ann Jones"
+
+function createURL(sting) {
+  return string.replaceAll(" ", "%20")
+}
+
+function above works
