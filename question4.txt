@@ -10,3 +10,22 @@ Output: false
 Input: "copyright"
 
 Output: true
+
+
+//loop over array
+//loop over again comparing two loops.
+//If i === j return false
+
+function unique (string) {
+  let isUnique = true;
+  for (let i = 0; i < string.length(); i++) {
+    for (let j = i + 1; j < string.length(); j++) {
+      if (string[i] === string[j]){
+        isUnique = false;
+        return isUnique;
+      }
+    }
+  }
+  return isUnique;
+}
+
